@@ -136,6 +136,8 @@ a{
 
     .offcanvas{
         transition: 0.5s;
+        background-color: var(--background-color);
+        border: solid 2px;
     }
 }
 
@@ -200,6 +202,10 @@ a{
         display: flex;
         flex-direction: column;
     }
+
+    .clients-img img{
+        width: auto;
+    }
 }
 
 
@@ -214,12 +220,6 @@ a{
     margin-bottom: 30px;
 }
 
-.payment figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .payment-img{
     height: 100px;
     margin-bottom: 10px;
@@ -229,7 +229,14 @@ a{
     text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 
+}
+
+@media (max-width: 1024px){
+    .payment-item{
+        margin: 40px;
+    }
 }
 
 /* FOOTER */
@@ -294,6 +301,20 @@ a{
     margin-top: 50px;
     text-align: center;
     opacity: 50%;
+}
+
+@media (max-width: 1024px){
+    .footer{
+        background-color: var(--background-color);
+        border: none;
+    }
+
+    .social{
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }
+
+
 }
 
 /* PRODUCTOS */
@@ -426,4 +447,3 @@ a{
     margin-left: 250px;
 
 }
-
