@@ -18,11 +18,16 @@ body{
     background-color: var(--background-color);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* HEADER */
 .header{
     height: 200px;
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
     position: sticky;
     top: 0;
     border-bottom: 3px solid rgba(0, 0, 0, 0.473);
@@ -63,6 +68,23 @@ body{
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    .header {
+        position: initial;
+        background-color: #dacafb;
+        border: none;
+    }
+
+    .header-position{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-search{
+        padding: 50px;
+    }
+}
+
 /* NAV */
 
 .nav-position{
@@ -87,12 +109,49 @@ body{
 
 }
 
+.navbar, .bg-body-tertiary{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .nav-position{
+        display:none;
+    }
+
+    .navbar{
+        display: block;
+        --bs-bg-opacity: 0;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: var(--background-color)
+        }
+
+    .navbar-toggler{
+        color: black;
+        background-color: white;
+        border: solid 2px;
+    }
+
+    .offcanvas{
+        transition: 0.5s;
+    }
+}
+
 /* MAIN */
 
-.body-img img{
-    display: block;
+.body-img{
+    display: flex;
     margin: 0 auto;
-    height: 1000px;
+    height: 100%;
+    background-image: url(../media/gatos_index.jpg);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    background-position: center;
+    margin-top: 100px;
 }
 
 .text-centered-h1{
@@ -106,6 +165,12 @@ body{
     text-align: center;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px){
+    .text-centered-p{
+        margin: 0 10em;
+    }
 }
 
 .clients{
@@ -124,6 +189,19 @@ body{
     padding: 20px;
     height: 300px;
 }
+
+@media (max-width: 1024px){
+    .clients{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .clients-img, .clients-video{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 /* PAYMENT */
 
@@ -184,7 +262,7 @@ body{
 }
 
 .fa-brands{
-    padding: 3px;
+    padding: 5px;
 }
 
 .footer-list li{
