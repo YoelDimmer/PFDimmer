@@ -28,7 +28,6 @@ a{
     height: 200px;
     width: 100%;
     padding-top: 20px;
-    position: sticky;
     top: 0;
     border-bottom: 3px solid rgba(0, 0, 0, 0.473);
     background-color: #e7cafb;
@@ -85,6 +84,8 @@ a{
     }
 }
 
+
+
 /* NAV */
 
 .nav-position{
@@ -139,22 +140,21 @@ a{
         background-color: var(--background-color);
         border: solid 2px;
     }
+
+    .btn-close{
+        position: initial;
+        display: flex;
+        align-self: flex-end;
+        padding: 20px;
+    }
+
+    .carousel{
+        margin-top: 175px;
+    }
 }
 
 /* MAIN */
 
-.body-img{
-    display: flex;
-    margin: 0 auto;
-    height: 100%;
-    background-image: url(../media/gatos_index.jpg);
-    min-height: 600px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: 100%;
-    background-position: center;
-    margin-top: 100px;
-}
 
 .text-centered-h1{
     padding: 50px;
