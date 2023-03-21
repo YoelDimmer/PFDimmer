@@ -114,6 +114,19 @@ a{
     display: none;
 }
 
+.carousel-fade .carousel-item {
+        opacity: 0;
+        transition-property: opacity;
+        transform: none;
+        transition-duration: 1.5s;
+
+}
+
+.carousel-inner{
+        height: 850px;
+}
+
+
 @media (max-width: 1024px) {
     .nav-position{
         display:none;
@@ -151,6 +164,16 @@ a{
     .carousel{
         margin-top: 175px;
     }
+
+    .carousel-inner{
+        height: 500px;
+      }
+}
+
+@media (max-width: 768px){
+    .carousel-inner{
+        height: 400px;
+      }
 }
 
 /* MAIN */
@@ -496,5 +519,12 @@ a{
 .FAQ-txt{
     font-size: 18px;
     margin-left: 250px;
+}
+
+@media (max-width: 1024px){
+    .FAQ-list, .FAQ-txt{
+        margin-right: 200px;
+    }
 
 }
+
