@@ -425,7 +425,7 @@ a{
 
 /* CONTACTO */
 
-.contact-txt{
+.contact-font{
     margin-left: 200px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -457,6 +457,22 @@ a{
 .contact-form{
     border-radius: 5px;
     padding: 50px 700px 50px 200px;
+}
+
+@media (max-width: 1024px){
+
+    .contact-txt{
+        text-align: center;
+    }
+
+    .contact-font{
+        margin: 0px;
+    }
+
+
+    .contact-form input[type=text],textarea{
+        width: 500px;
+    }
 }
 
 /* FAQ */
