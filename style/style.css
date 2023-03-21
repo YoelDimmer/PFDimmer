@@ -360,7 +360,7 @@ a{
 }
 
 @media (max-width: 1024px){
-    .products-main{
+    .generic-main{
         margin-top: 150px;
     }
 
@@ -380,7 +380,7 @@ a{
 
 .us-img{
     height: 500px;
-    padding: 50px;
+    padding: 0px 50px;
 }
 
 .us-txt{
@@ -397,6 +397,30 @@ a{
 }
 .map-position{
     padding: 50px;
+}
+
+@media (max-width: 1024px){
+    .about-us{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .us-txt{
+        margin: 50px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .us-map{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .map-position{
+        align-self: center;
+    }
+
+
 }
 
 /* CONTACTO */
