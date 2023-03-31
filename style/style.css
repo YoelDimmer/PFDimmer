@@ -570,8 +570,29 @@ a{
     .map-position{
         align-self: center;
     }
+}
 
+@media (max-width: 768px){
+    .us-img{
+        width: 120%;
+        height: 120%;
+    }
 
+    .map-position{
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px){
+    .us-txt{
+        margin: 10px;
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .map-position{
+        height: 100%;
+    }
 }
 
 /* CONTACTO */
