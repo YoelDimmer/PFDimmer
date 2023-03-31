@@ -712,3 +712,21 @@ a{
 
 }
 
+@media (max-width: 760px){
+    .FAQ-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FAQ-list, .FAQ-txt{
+        margin: 25px 40px;
+    }
+
+    .generic-h2{
+        margin: 20px 40px;
+    }
+
+    .FAQ-list li, .FAQ-txt{
+        font-size: 16px;
+    }
+}
