@@ -86,6 +86,7 @@ a{
 
 
 
+
 /* NAV */
 
 .nav-position{
@@ -172,8 +173,26 @@ a{
 
 @media (max-width: 768px){
     .carousel-inner{
-        height: 400px;
+        height: 350px;
       }
+}
+
+@media (max-width: 600px){
+    .carousel-inner{
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px){
+    .carousel-inner{
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px){
+    .carousel-inner{
+        height: 200px;
+    }
 }
 
 /* MAIN */
@@ -195,6 +214,19 @@ a{
 @media (max-width: 768px){
     .text-centered-p{
         margin: 0 10em;
+    }
+}
+
+@media (max-width: 550px){
+    .text-centered-h1{
+        padding: 30px;
+        font-size: 22px;
+    }
+
+    .text-centered-p{
+        text-align: center;
+        margin: 0 5em;
+        font-size: 16px;
     }
 }
 
@@ -225,11 +257,20 @@ a{
         display: flex;
         flex-direction: column;
     }
+}
 
+@media (max-width: 768px){
     .clients-img img{
-        width: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .clients-video iframe{
+        width: 100%;
+        height: 100%;
     }
 }
+
 
 
 /* PAYMENT */
@@ -259,6 +300,17 @@ a{
 @media (max-width: 1024px){
     .payment-item{
         margin: 40px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .payment-txt{
+        margin: 10px;
+    }
+    .payment-item{
+        margin: 0px;
+        margin-top: 30px;
     }
 }
 
@@ -336,6 +388,18 @@ a{
         margin-bottom: 20px;
         padding: 10px 0px;
     }
+
+    .footer-menu{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .footer-suscribe{
+        padding: 20px;
+    }
+
+
 
 
 }
