@@ -1,0 +1,20 @@
+@import '../base/fonts';
+@import '../utilities/mixin';
+
+.contact-font {
+    margin-left: 200px;
+    font-size: 20px;
+    font-family: $arial;
+  }
+  
+  
+  
+ @include xxl {
+    .contact-txt {
+      text-align: center;
+    }
+  
+    .contact-font {
+      margin: 0px;
+    }
+  }

@@ -1,0 +1,76 @@
+@import '../base/colors';
+@import '../utilities/mixin';
+
+.header {
+    @include sizes(100%,200px);
+    padding-top: 20px;
+    top: 0;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.473);
+    background-color: $color-header;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .header-position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .header-search input {
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 8px;
+    background: $color-background;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-button {
+    border-radius: 6px;
+    padding: 8px;
+    background-color: $color-background;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .login-button {
+    border-radius: 6px;
+    padding: 8px;
+    background-color: $color-background;
+    cursor: pointer;
+  }
+  
+  @include xxl {
+    .header {
+      position: initial;
+      background-color: $color-primary;
+      border: none;
+    }
+  
+    .header-position {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-search {
+      padding: 50px;
+    }
+  }
+  
+  @include xxs {
+    .header-form {
+      width: 100%;
+    }
+  
+    .header-search {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-button {
+      width: 40px;
+    }
+  }

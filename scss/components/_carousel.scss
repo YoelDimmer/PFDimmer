@@ -1,0 +1,58 @@
+@import '../utilities/mixin';
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    transform: none;
+    transition-duration: 1.5s;
+  }
+  
+  .carousel-inner {
+    height: 850px;
+  }
+
+@include xxl{
+    .carousel {
+        margin-top: 175px;
+      }
+    
+      .carousel-inner {
+        height: 500px;
+      }
+}
+
+@include xl{
+    .carousel-inner {
+        height: 350px;
+      }
+}
+
+@include lg{
+    .carousel-inner{
+        height: 300px;
+    }
+}
+
+@include sm{
+    .carousel-inner {
+        height: 250px;
+      }
+}
+
+@include xs{
+    .carousel-inner {
+        height: 200px;
+      }
+}
+
+@include xxs{
+    .carousel {
+        margin-top: 220px;
+      }
+}
+
+@include xxxs{
+    .carousel-inner {
+        height: 150px;
+      }
+}

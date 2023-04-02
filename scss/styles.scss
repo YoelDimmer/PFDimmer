@@ -1,0 +1,27 @@
+/* BASE */
+
+@import './base/reset';
+
+/* UTILITIES */
+
+@import './utilities/mixin';
+@import './utilities/variables';
+
+/* COMPONENTS */
+
+@import './components/carousel';
+
+/* LAYOUT */
+
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/header';
+@import './layout/navbar';
+
+/* VIEWS */
+
+@import './views/contacto';
+@import './views/FAQ';
+@import './views/index';
+@import './views/nosotros';
+@import './views/productos';

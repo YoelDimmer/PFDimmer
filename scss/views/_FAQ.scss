@@ -1,0 +1,48 @@
+@import '../base/fonts';
+@import '../utilities/mixin';
+
+.generic-h2 {
+    margin: 30px 200px;
+    font-size: 18px;
+    font-family: $arial;
+  }
+  
+  .FAQ-list {
+    list-style: inside;
+    margin-left: 250px;
+  
+    li {
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+  
+  .FAQ-txt {
+    font-size: 18px;
+    margin-left: 250px;
+  }
+  
+  @include xxl {
+    .FAQ-list, .FAQ-txt {
+      margin-right: 200px;
+    }
+  }
+  
+  @include xl {
+    .FAQ-body {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .FAQ-list, .FAQ-txt {
+      margin: 25px 40px;
+    }
+  
+    .generic-h2 {
+      margin: 20px 40px;
+    }
+  
+    .FAQ-list li, .FAQ-txt {
+      font-size: 16px;
+    }
+  }

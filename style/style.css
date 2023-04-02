@@ -24,6 +24,7 @@ a{
 }
 
 /* HEADER */
+
 .header{
     height: 200px;
     width: 100%;
@@ -99,9 +100,6 @@ a{
         width: 40px;
     }
 }
-
-
-
 
 /* NAV */
 

@@ -1,0 +1,79 @@
+@import '../utilities/mixin';
+
+.contact-form input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .contact-form {
+    input[type=submit] {
+      background-color: #04aa6d;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  
+    border-radius: 5px;
+    padding: 50px 700px 50px 200px;
+  }
+
+@include xxl {
+    .contact-form {
+        width: 100%;
+        padding: 150px;
+    
+        input[type=text] {
+          width: 100%;
+        }
+      }
+    
+      textarea {
+        width: 100%;
+      }
+}
+
+@include xl-min {
+    .contact-form input[type=text], textarea {
+        min-width: 300px;
+        width: 100%;
+      }
+}
+
+@include xl {
+    .contact-form {
+        width: 100%;
+        margin: 0px;
+        padding: 120px;
+      }
+}
+
+@include lg {
+    .contact-form {
+        padding: 40px;
+      }
+}
+
+@include me {
+    .contact-form {
+        padding: 20px;
+    
+        input[type=text] {
+          width: 100%;
+        }
+      }
+    
+      textarea {
+        width: 100%;
+      }
+}

@@ -1,0 +1,65 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../utilities/mixin';
+
+
+.nav-position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .nav-buttons a {
+    padding: 30px;
+    font-size: 25px;
+    font-family: $calibri;
+    transition: background-color .25s, border-radius .25s;
+  
+    &:hover {
+      background-color: $color-hover;
+      border-radius: 30px;
+    }
+  }
+  
+  .navbar, .bg-body-tertiary {
+    display: none;
+  }
+  
+  @include xxl {
+    .nav-position {
+      display: none;
+    }
+  
+    .navbar {
+      display: block;
+      --bs-bg-opacity:0;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: var(--background-color);
+    }
+  
+    .navbar-toggler {
+      color: black;
+      background-color: $color-background;
+      border: solid 2px;
+    }
+  
+    .offcanvas {
+      transition: 0.5s;
+      background-color: $color-primary;
+      border: solid 2px;
+    }
+  
+    .btn-close {
+      position: initial;
+      display: flex;
+      align-self: flex-end;
+      padding: 20px;
+    }
+  
+  }

@@ -1,0 +1,101 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../utilities/mixin';
+
+.footer {
+    padding: 10px;
+    margin-top: 70px;
+    background-color: $color-header;
+    border-top: 3px solid rgba(0, 0, 0, 0.473);
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .social {
+    margin: 20px 10px;
+    font-size: 20px;
+    font-family: $courier;
+    display: flex;
+    align-items: center;
+  
+    p {
+      margin-right: 10px;
+    }
+  }
+  
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .fa-brands {
+    padding: 5px;
+  }
+  
+  .footer-list li {
+    margin: 10px;
+    font-size: 20px;
+    font-family: $arial;
+    list-style: none;
+  }
+  
+  .footer-suscribe {
+    font-size: 20px;
+    font-family: $courier;
+  }
+  
+  .footer-form {
+    padding: 5px;
+  }
+  
+  .footer-btn {
+    margin-left: 5px;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-rights {
+    margin-top: 50px;
+    text-align: center;
+    opacity: 50%;
+  }
+  
+  @include xxl {
+    .footer {
+      background-color: $color-primary;
+      border: none;
+    }
+  
+    .social {
+      margin-bottom: 20px;
+      padding: 10px 0px;
+    }
+  
+    .footer-menu {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .footer-suscribe {
+      padding: 20px;
+    }
+  }
+  
+  @include xxs {
+    .footer-form {
+      width: 100%;
+    }
+  
+    .footer-suscribe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-btn {
+      width: 100px;
+    }
+  }
