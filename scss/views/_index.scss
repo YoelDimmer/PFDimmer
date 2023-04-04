@@ -46,11 +46,23 @@
   .clients-img img {
     padding: 30px;
     height: 550px;
+    transition: transform .2s;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   
   .clients-video iframe {
     padding: 20px;
     height: 300px;
+    transition: transform .2s;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   
   @include xxl {

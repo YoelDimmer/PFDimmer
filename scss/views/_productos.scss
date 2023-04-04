@@ -35,6 +35,12 @@
   .products-img {
     padding: 20px;
     height: 500px;
+    transition: transform .2s;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   
   .products-txt {
