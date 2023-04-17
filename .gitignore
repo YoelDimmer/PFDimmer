@@ -80,4 +80,8 @@ $RECYCLE.BIN/
 *.lnk
 *.txt
 
+# Package
+
+package.json
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode
