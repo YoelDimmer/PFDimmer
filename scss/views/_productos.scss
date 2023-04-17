@@ -62,11 +62,12 @@
   
   @include me {
     .products-order {
-      margin: 0px;
+      margin-left: 45px;
       float: none;
     }
   
     .select-form {
+      margin-left: 45px;
       float: none;
     }
   
@@ -85,4 +86,14 @@
     .generic-main {
       margin-top: 200px;
     }
+
+    .products-order {
+      font-size: 12px;
+    }
+
+    .select-form {
+      font-size: 12px;
+    }
+
+
   }
